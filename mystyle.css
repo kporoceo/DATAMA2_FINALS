@@ -17,13 +17,11 @@ body {
 }
 
 h1{
-    color: white;
-    margin-bottom: 10px;
+    color: white
 }
 
 h2, h3 {
     color: #f77b19;
-    margin-bottom: 10px;
 }
 
 /* Header */
@@ -51,13 +49,11 @@ h2, h3 {
 .title-container h1 {
     margin: 0;
     font-size: 2.5rem;
-    line-height: 1.2;
 }
 
 .tagline {
     margin: 0;
     font-style: italic;
-    font-size: 1.1rem;
 }
 
 /* Form Styles */
@@ -87,7 +83,6 @@ legend {
     font-weight: bold;
     color: #f77b19;
     padding: 0 10px;
-    font-size: 1.2rem;
 }
 
 button[type="submit"] {
@@ -99,8 +94,6 @@ button[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    display: block;
-    margin: 10px auto;
 }
 
 button[type="submit"]:hover {
@@ -114,12 +107,10 @@ button[type="submit"]:hover {
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    margin-top: 20px;
 }
 
 .card h2 {
     color: #f77b19;
-    margin-bottom: 10px;
 }
 
 .card ul {
@@ -146,7 +137,6 @@ table th, table td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-    word-wrap: break-word;
 }
 
 table th {
