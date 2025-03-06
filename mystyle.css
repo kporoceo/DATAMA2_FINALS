@@ -1,132 +1,26 @@
-/* General Styles */
+/* General Reset */
 body {
     font-family: Arial, sans-serif;
-    background-color: #F9F4EC;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
+    padding: 20px;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1{
-    color: white
-}
-
-h2, h3 {
-    color: #f77b19;
-}
-
-/* Header */
-.header {
-    background-color: #f77b19;
-    color: white;
-    padding: 20px;
+h1 {
     text-align: center;
-    border-bottom: 5px solid #9A5307;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.logo {
-    width: 80px;
-    height: auto;
-    border-radius: 50%;
-}
-
-.title-container h1 {
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-.tagline {
-    margin: 0;
-    font-style: italic;
-}
-
-/* Form Styles */
-form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-}
-
-form input, form select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-fieldset {
-    border: 2px solid #f77b19;
-    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
 }
 
-legend {
-    font-weight: bold;
-    color: #f77b19;
-    padding: 0 10px;
-}
-
-button[type="submit"] {
-    background-color: #f77b19;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #9A5307;
-}
-
-/* Confirmation Card */
-.card {
-    background-color: #fff;
-    border: 2px solid #f77b19;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.card h2 {
-    color: #f77b19;
-}
-
-.card ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.card li {
-    background: #F9F4EC;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: 1px solid #f77b19;
-    border-radius: 5px;
-}
-
-/* Admin Table Styles */
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -134,16 +28,44 @@ table {
 }
 
 table th, table td {
-    padding: 12px;
+    border: 1px solid #ddd;
+    padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
 }
 
 table th {
-    background-color: #f77b19;
+    background-color: #007bff;
     color: white;
+    text-transform: uppercase;
 }
 
-table tr:hover {
-    background-color: #f9f4ec;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Button Styling */
+.button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
